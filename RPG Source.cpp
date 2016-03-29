@@ -204,6 +204,123 @@ int main(){
 	cout << "3. Battle" << endl;
 	cout << "4. Quit" << endl;
 
+	cout << "Your selection: " << endl;
+
+	do{
+
+		cin >> menu;
+		switch (menu){
+
+		case 1:
+			PlayerHealth = PlayerMaxHealth;
+			cout << "Your health has been fully restored!" << endl;
+			break;
+
+		case 2:
+			cout << "Welcome to the shop! What would you like to purchase?" << endl;
+			cout << endl;
+
+			cout << "1. Potion   $" << shop.getPotionCost() << endl;
+			cout << "2. Basic Armor   $" << shop.getBasicArmorCost() << endl;
+			cout << "3. Sturdy Armor   $" << shop.getSturdyArmorCost() << endl;
+			cout << "4. Strong Armor   $" << shop.getStrongArmorCost() << endl;
+			cout << "5. Olympian Armor   $" << shop.getOlympianArmorCost() << endl;
+
+			if (PlayerClass == A){
+				cout << "6. Longbow   $" << shop.getLongbowCost() << endl;
+				cout << "7. Enchanted Bow   $" << shop.getEnchantedBowCost() << endl;
+				cout << "8. Bow of Apollo   $" << shop.getBowOfApolloCost() << endl;
+			}
+			if (PlayerClass == B){
+				cout << "6. Thick Club   $" << shop.getThickClubCost() << endl;
+				cout << "7. Enchanted Mace   $" << shop.getEnchantedMaceCost() << endl;
+				cout << "8. Hammer of Hephaestus   $" << shop.getHammerOfHephaestusCost() << endl;
+			}
+			if (PlayerClass == S){
+				cout << "6. Bronze Dagger   $" << shop.getBronzeDaggerCost() << endl;
+				cout << "7. Enchanted Gladius   $" << shop.getEnchantedGladiusCost() << endl;
+				cout << "8. Sword of Ares   $" << shop.getSwordOfAresCost() << endl;
+			}
+
+			cout << "9. Exit" << endl;
+			cout << endl;
+			cout << "Make your selection (1-9)" << endl;
+
+
+			do{
+				cin >> ShopMenu;
+
+				switch (ShopMenu){
+
+				case 1:
+					if (PlayerGold >= shop.getPotionCost()){
+						PlayerGold -= shop.getPotionCost();
+						PlayerPotion += 1;
+						cout << "You purchased a potion!" << endl;
+						cout << "You can use this to heal during battle." << endl;
+					}
+					else{
+						cout << "You do not have enough gold for that." << endl;
+					}
+
+					cout << endl;
+					break;
+
+				case 2:
+					if (PlayerGold >= shop.getBasicArmorCost()){
+						PlayerDefense = shop.getBasicArmorDefense();
+						cout << "You purchased basic armor!" << endl;
+						cout << "Your defense is now " << PlayerDefense << endl;
+					}
+					else{
+						cout << "You do not have enough gold for that." << endl;
+					}
+					cout << endl;
+					break;
+
+				case 3:
+					if (PlayerGold >= shop.getSturdyArmorCost()){
+						PlayerDefense = shop.getSturdyArmorDefense();
+						cout << "You purchased basic armor!" << endl;
+						cout << "Your defense is now " << PlayerDefense << endl;
+					}
+					else{
+						cout << "You do not have enough gold for that." << endl;
+					}
+					cout << endl;
+					break;
+
+				case 4:
+					if (PlayerGold >= shop.getStrongArmorCost()){
+						PlayerDefense = shop.getStrongArmorDefense();
+						cout << "You purchased basic armor!" << endl;
+						cout << "Your defense is now " << PlayerDefense << endl;
+					}
+					else{
+						cout << "You do not have enough gold for that." << endl;
+					}
+					cout << endl;
+					break;
+
+				case 5:
+					if (PlayerGold >= shop.getOlympianArmorCost()){
+						PlayerDefense = shop.getOlympianArmorDefense();
+						cout << "You purchased basic armor!" << endl;
+						cout << "Your defense is now " << PlayerDefense << endl;
+					}
+					else{
+						cout << "You do not have enough gold for that." << endl;
+					}
+					cout << endl;
+					break;
+
+
+				}
+			} while (ShopMenu != 8);
+		}
+
+	} while (menu != 4);
+
 	system("pause");
 	return 0;
 }
