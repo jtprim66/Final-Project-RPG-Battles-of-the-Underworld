@@ -10,16 +10,16 @@ private:
 
 	//Armors
 	int BasicArmorCost = 5;
-	int BasicArmorDefense = 5; 
+	float BasicArmorDefense = 5; 
 
 	int SturdyArmorCost = 10;
-	int SturdyArmorDefense = 6;
+	float SturdyArmorDefense = 6;
 
 	int StrongArmorCost = 15;
-	int StrongArmorDefense = 7;
+	float StrongArmorDefense = 7;
 
 	int OlympianArmorCost = 20;
-	int OlympianArmorDefense = 8;
+	float OlympianArmorDefense = 8;
 
 	//Weapons
 
@@ -59,16 +59,16 @@ public:
 	int getPotionPower();
 
 	int getBasicArmorCost();
-	int getBasicArmorDefense();
+	float getBasicArmorDefense();
 
 	int getSturdyArmorCost();
-	int getSturdyArmorDefense();
+	float getSturdyArmorDefense();
 
 	int getStrongArmorCost();
-	int getStrongArmorDefense();
+	float getStrongArmorDefense();
 
 	int getOlympianArmorCost();
-	int getOlympianArmorDefense();
+	float getOlympianArmorDefense();
 
 	int getLongbowCost();
 	int getLongbowAttack();
