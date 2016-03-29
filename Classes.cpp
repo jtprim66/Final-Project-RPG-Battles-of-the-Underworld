@@ -170,7 +170,7 @@ int Shop::getPotionPower(){
 int Shop::getBasicArmorCost(){
 	return BasicArmorCost;
 }
-int Shop::getBasicArmorDefense(){
+float Shop::getBasicArmorDefense(){
 	return BasicArmorDefense;
 }
 
@@ -178,7 +178,7 @@ int Shop::getBasicArmorDefense(){
 int Shop::getSturdyArmorCost(){
 	return SturdyArmorCost;
 }
-int Shop::getSturdyArmorDefense(){
+float Shop::getSturdyArmorDefense(){
 	return SturdyArmorDefense;
 }
 
@@ -186,7 +186,7 @@ int Shop::getSturdyArmorDefense(){
 int Shop::getStrongArmorCost(){
 	return StrongArmorCost;
 }
-int Shop::getStrongArmorDefense(){
+float Shop::getStrongArmorDefense(){
 	return StrongArmorDefense;
 }
 
@@ -194,7 +194,7 @@ int Shop::getStrongArmorDefense(){
 int Shop::getOlympianArmorCost(){
 	return OlympianArmorCost;
 }
-int Shop::getOlympianArmorDefense(){
+float Shop::getOlympianArmorDefense(){
 	return OlympianArmorDefense;
 }
 
