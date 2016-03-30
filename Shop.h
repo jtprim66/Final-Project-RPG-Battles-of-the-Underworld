@@ -25,33 +25,33 @@ private:
 
 	//Archer Weapons
 	int LongbowCost = 5;
-	int LongbowAttack = 7;
+	float LongbowAttack = 7;
 
 	int EnchantedBowCost = 10;
-	int EnchantedBowAttack = 8;
+	float EnchantedBowAttack = 8;
 
 	int BowOfApolloCost = 20;
-	int BowOfApolloAttack = 10;
+	float BowOfApolloAttack = 10;
 
 	//Berserker Weapons
 	int ThickClubCost = 3;
-	int ThickClubAttack = 5;
+	float ThickClubAttack = 5;
 
 	int EnchantedMaceCost = 7;
-	int EnchantedMaceAttack = 6;
+	float EnchantedMaceAttack = 6;
 
 	int HammerOfHephaestusCost = 15;
-	int HammerOfHephaestusAttack = 8;
+	float HammerOfHephaestusAttack = 8;
 
 	//Spartan Weapons
 	int BronzeDaggerCost = 3;
-	int BronzeDaggerAttack = 5;
+	float BronzeDaggerAttack = 5;
 
 	int EnchantedGladiusCost = 7;
-	int EnchantedGladiusAttack = 6;
+	float EnchantedGladiusAttack = 6;
 
 	int SwordOfAresCost = 15;
-	int SwordOfAresAttack = 8;
+	float SwordOfAresAttack = 8;
 
 public:
 
@@ -71,29 +71,29 @@ public:
 	float getOlympianArmorDefense();
 
 	int getLongbowCost();
-	int getLongbowAttack();
+	float getLongbowAttack();
 
 	int getEnchantedBowCost();
-	int getEnchantedBowAttack();
+	float getEnchantedBowAttack();
 
 	int getBowOfApolloCost();
-	int getBowOfApolloAttack();
+	float getBowOfApolloAttack();
 
 	int getThickClubCost();
-	int getThickClubAttack();
+	float getThickClubAttack();
 
 	int getEnchantedMaceCost();
-	int getEnchantedMaceAttack();
+	float getEnchantedMaceAttack();
 
 	int getHammerOfHephaestusCost();
-	int getHammerOfHephaestusAttack();
+	float getHammerOfHephaestusAttack();
 
 	int getBronzeDaggerCost();
-	int getBronzeDaggerAttack();
+	float getBronzeDaggerAttack();
 
 	int getEnchantedGladiusCost();
-	int getEnchantedGladiusAttack();
+	float getEnchantedGladiusAttack();
 
 	int getSwordOfAresCost();
-	int getSwordOfAresAttack();
+	float getSwordOfAresAttack();
 };
