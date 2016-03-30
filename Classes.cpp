@@ -202,7 +202,7 @@ float Shop::getOlympianArmorDefense(){
 int Shop::getLongbowCost(){
 	return LongbowCost;
 }
-int Shop::getLongbowAttack(){
+float Shop::getLongbowAttack(){
 	return LongbowAttack;
 }
 
@@ -210,7 +210,7 @@ int Shop::getLongbowAttack(){
 int Shop::getEnchantedBowCost(){
 	return EnchantedBowCost;
 }
-int Shop::getEnchantedBowAttack(){
+float Shop::getEnchantedBowAttack(){
 	return EnchantedBowAttack;
 }
 
@@ -218,7 +218,7 @@ int Shop::getEnchantedBowAttack(){
 int Shop::getBowOfApolloCost(){
 	return BowOfApolloCost;
 }
-int Shop::getBowOfApolloAttack(){
+float Shop::getBowOfApolloAttack(){
 	return BowOfApolloAttack;
 }
 
@@ -226,7 +226,7 @@ int Shop::getBowOfApolloAttack(){
 int Shop::getThickClubCost(){
 	return ThickClubCost;
 }
-int Shop::getThickClubAttack(){
+float Shop::getThickClubAttack(){
 	return ThickClubAttack;
 }
 
@@ -234,7 +234,7 @@ int Shop::getThickClubAttack(){
 int Shop::getEnchantedMaceCost(){
 	return EnchantedMaceCost;
 }
-int Shop::getEnchantedMaceAttack(){
+float Shop::getEnchantedMaceAttack(){
 	return EnchantedMaceAttack;
 }
 
@@ -242,7 +242,7 @@ int Shop::getEnchantedMaceAttack(){
 int Shop::getHammerOfHephaestusCost(){
 	return HammerOfHephaestusCost;
 }
-int Shop::getHammerOfHephaestusAttack(){
+float Shop::getHammerOfHephaestusAttack(){
 	return HammerOfHephaestusAttack;
 }
 
@@ -250,7 +250,7 @@ int Shop::getHammerOfHephaestusAttack(){
 int Shop::getBronzeDaggerCost(){
 	return BronzeDaggerCost;
 }
-int Shop::getBronzeDaggerAttack(){
+float Shop::getBronzeDaggerAttack(){
 	return BronzeDaggerAttack;
 }
 
@@ -258,7 +258,7 @@ int Shop::getBronzeDaggerAttack(){
 int Shop::getEnchantedGladiusCost(){
 	return EnchantedGladiusCost;
 }
-int Shop::getEnchantedGladiusAttack(){
+float Shop::getEnchantedGladiusAttack(){
 	return EnchantedGladiusAttack;
 }
 
@@ -266,7 +266,7 @@ int Shop::getEnchantedGladiusAttack(){
 int Shop::getSwordOfAresCost(){
 	return SwordOfAresCost;
 }
-int Shop::getSwordOfAresAttack(){
+float Shop::getSwordOfAresAttack(){
 	return SwordOfAresAttack;
 }
 
