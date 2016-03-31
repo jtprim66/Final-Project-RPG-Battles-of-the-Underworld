@@ -30,7 +30,7 @@ int main(){
 	string hgs("Hecate Goddess of Sorcery");
 	string tgd("Thanatos God of Death");
 	string hgu("Hades God of the Underworld");
-	string tsbp("Tartarus Spirit of th Bottomless Pit");
+	string tsbp("Tartarus Spirit of the Bottomless Pit");
 
 	int BattleMenu = 0;
 	float EnemyHealth = 0;
@@ -167,7 +167,7 @@ int main(){
 			break;
 
 		default:
-			cout << "That is not an option" << endl;
+			cout << "That is not a valid option" << endl;
 			continue;
 		}
 
@@ -438,6 +438,10 @@ int main(){
 					cout << PlayerName << " left the shop." << endl;
 					cout << endl;
 					break;
+
+				default:
+					cout << "That is not a valid option" << endl;
+					cout << endl;
 				}
 
 			} while (ShopMenu != 9);
@@ -572,6 +576,10 @@ int main(){
 					EnemyGold = nmy.gettsbpGold();
 					EnemyName = tsbp;
 					break;
+
+				default:
+					cout << "That is not a valid option" << endl;
+					cout << endl;
 				}
 
 				EnemyAttackPercent = EnemyAttack;
@@ -622,7 +630,7 @@ int main(){
 						break;
 
 					default:
-						cout << "That is not an option" << endl;
+						cout << "That is not a valid option" << endl;
 						continue;
 					}
 
@@ -640,6 +648,21 @@ int main(){
 					cout << "Gold earned: " << EnemyGold << endl;
 					PlayerGold += EnemyGold;
 					cout << endl;
+					if (EnemyName == tsbp){
+						cout << "Finally, after a long journey, " << PlayerName << endl;
+						cout << "did what was said to be impossible and " << endl;
+						cout << "defeated the ancient spirit of Tartarus. " << endl;
+						cout << "The quest now completed, " << PlayerName << endl;
+						cout << "returned to the overworld to be crowned " << endl;
+						cout << "as a new Greek god upon Mount Olympus." << endl;
+						cout << endl;
+
+						cout << "Congratulations " << PlayerName << "!" << endl;
+						cout << endl;
+
+						system("pause");
+						return 1;
+					}
 				}
 
 				if (PlayerHealth <= 0){
@@ -660,6 +683,10 @@ int main(){
 				case 4:
 					cout << "Thank you for playing!" << endl;
 					break;
+
+				default:
+					cout << "That is not a valid option" << endl;
+					cout << endl;
 		}
 
 	} while (menu != 4);
