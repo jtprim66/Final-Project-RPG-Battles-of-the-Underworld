@@ -43,47 +43,47 @@ private:
 	// Vengeful Spirit
 	float vsHealth = 50;
 	float vsAttack = 10;
-	int vsGold = 3;
+	int vsGold = 2;
 
 	// Hellhound
 	float hHealth = 70;
 	float hAttack = 15;
-	int hGold = 5;
+	int hGold = 4;
 
 	//Eurynomos the Flesh Eater
 	float efeHealth = 100;
 	float efeAttack = 15;
-	int efeGold = 10;
+	int efeGold = 6;
 
 	// Erinye
 	float eHealth = 120;
 	float eAttack = 20;
-	int eGold = 15;
+	int eGold = 7;
 
 	// Cerberus
 	float cHealth = 125;
 	float cAttack = 25;
-	int cGold = 25;
+	int cGold = 10;
 
 	// Hecate Goddess of Sorcery
 	float hgsHealth = 140;
 	float hgsAttack = 35;
-	int hgsGold = 30;
+	int hgsGold = 15;
 
 	// Thanatos God of Death
 	float tgdHealth = 150;
 	float tgdAttack = 45;
-	int tgdGold = 40;
+	int tgdGold = 20;
 
 	// Hades God of the Underworld
 	float hguHealth = 200;
 	int hguAttack = 50;
-	int hguGold = 50;
+	int hguGold = 25;
 
 	// Tartarus Spirit of the Bottomless Pit
 	float tsbpHealth = 400;
 	float tsbpAttack = 80;
-	int tsbpGold = 100;
+	int tsbpGold = 50;
 
 public:
 
