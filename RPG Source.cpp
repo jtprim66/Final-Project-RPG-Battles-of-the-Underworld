@@ -445,6 +445,7 @@ int main(){
 				}
 
 			} while (ShopMenu != 9);
+			break;
 
 			case 3:
 				cout << "Select an enemy to battle:" << endl;
@@ -582,6 +583,8 @@ int main(){
 					cout << endl;
 				}
 
+				PlayerDefensePercent = PlayerDefense;
+				PlayerDefensePercent /= 10;
 				EnemyAttackPercent = EnemyAttack;
 				EnemyAttackPercent *= PlayerDefensePercent;
 				EnemyAttack -= EnemyAttackPercent;
