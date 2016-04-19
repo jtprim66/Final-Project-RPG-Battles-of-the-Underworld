@@ -148,12 +148,22 @@ int main(){
 
 		case 2:
 			if (PlayerPotion > 0){
-				PlayerHealth += 25;
-				cout << PlayerName << " used a potion!" << endl;
-				cout << endl;
-				break;
+				if (PlayerHealth > 75){
+					PlayerHealth = PlayerMaxHealth;
+					cout << PlayerName << " used a potion!" << endl;
+					PlayerPotion -= 1;
+					cout << endl;
+					break;
+				}
+				else{
+					PlayerHealth += 25;
+					cout << PlayerName << " used a potion!" << endl;
+					PlayerPotion -= 1;
+					cout << endl;
+					break;
+				}
 			}
-			else{
+			if (PlayerPotion = 0){
 				cout << "You have no potions remaining!" << endl;
 				cout << endl;
 				continue;
@@ -614,15 +624,20 @@ int main(){
 
 					case 2:
 						if (PlayerPotion > 0){
-							PlayerHealth += 25;
-							cout << PlayerName << " used a potion!" << endl;
-							cout << endl;
-							break;
-						}
-						else{
-							cout << "You have no potions remaining!" << endl;
-							cout << endl;
-							continue;
+							if (PlayerHealth > 75){
+								PlayerHealth = PlayerMaxHealth;
+								cout << PlayerName << " used a potion!" << endl;
+								PlayerPotion -= 1;
+								cout << endl;
+								break;
+							}
+							else{
+								PlayerHealth += 25;
+								cout << PlayerName << " used a potion!" << endl;
+								PlayerPotion -= 1;
+								cout << endl;
+								break;
+							}
 						}
 
 					case 3:
