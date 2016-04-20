@@ -652,6 +652,7 @@ int main(){
 						continue;
 					}
 
+
 					if (EnemyHealth > 0 && RoundLoss != 1){
 						PlayerHealth -= EnemyAttack;
 						cout << EnemyName << " attacked!" << endl;
@@ -696,6 +697,20 @@ int main(){
 							cout << "Your health is now 150!" << endl;
 							cout << endl;
 					}
+						if (EnemyName == hgs){
+							cout << "With Hecate now defeated, " << PlayerName << endl;
+							cout << " took her magic torch, knowing its power." << endl;
+							cout << endl;
+							MaxTorchPower = 1;
+							TorchPower = MaxTorchPower;
+							cout << "You got Hecate's torch!" << endl;
+							cout << "You can use this once per battle." << endl;
+							cout << "The torch causes 25 damage and leaves " << endl;
+							cout << "A burn effect that causes 5 extra damage " << endl;
+							cout << "each following turn. To restore the torch " << endl;
+							cout << "power, just heal after the battle." << endl;
+							cout << endl;
+						}
 				}
 
 				if (PlayerHealth <= 0){
