@@ -16,6 +16,8 @@ int main(){
 	string PlayerClass;
 	string PlayerName;
 	int PlayerGold = 0;
+	int TorchPower = 0;
+	int MaxTorchPower = 0;
 
 	string A("Archer");
 	string B("Berserker");
@@ -42,6 +44,7 @@ int main(){
 	int RoundLoss = 0;
 	int DivideGold = 4;
 	int LossGold = 0;
+	bool brn = false;
 	string EnemyName("None");
 
 	int menu = 0;
@@ -229,6 +232,7 @@ int main(){
 
 		case 1:
 			PlayerHealth = PlayerMaxHealth;
+			TorchPower = MaxTorchPower;
 			cout << "Your health has been fully restored!" << endl;
 			cout << endl;
 			break;
@@ -608,6 +612,9 @@ int main(){
 					cout << "1. Attack" << endl;
 					cout << "2. Use potion (" << PlayerPotion << " potions in inventory)" << endl;
 					cout << "3. Retreat (This wil count as a loss but no money will be lost)" << endl;
+					if (MaxTorchPower > 0){
+						cout << "4. Use Hecate's torch" << endl;
+					}
 					cout << endl;
 					cout << "Enter the number of your option: " << endl;
 
@@ -647,11 +654,39 @@ int main(){
 						Losses += 1;
 						break;
 
+					case 4:
+						if (MaxTorchPower > 0){
+							if (TorchPower > 0){
+								cout << PlayerName << " used Hecate's torch!" << endl;
+								EnemyHealth -= 25;
+								brn = true;
+								MaxTorchPower -= 1;
+								cout << endl;
+								break;
+							}
+							if (TorchPower < 1){
+								cout << "You are out of torch power." << endl;
+								cout << endl;
+								continue;
+							}
+							else{
+								cout << "That is not a valid option" << endl;
+								cout << endl;
+								continue;
+							}
+						}
+
 					default:
 						cout << "That is not a valid option" << endl;
+						cout << endl;
 						continue;
 					}
 
+					if (brn == true){
+						EnemyHealth -= 5;
+						cout << EnemyName << " was hurt by their burn!" << endl;
+						cout << endl;
+					}
 
 					if (EnemyHealth > 0 && RoundLoss != 1){
 						PlayerHealth -= EnemyAttack;
