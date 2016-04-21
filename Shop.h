@@ -10,16 +10,16 @@ private:
 
 	//Armors
 	int BasicArmorCost = 5;
-	float BasicArmorDefense = 5; 
+	float BasicArmorDefense = 2; 
 
 	int SturdyArmorCost = 10;
-	float SturdyArmorDefense = 6;
+	float SturdyArmorDefense = 3;
 
 	int StrongArmorCost = 15;
-	float StrongArmorDefense = 7;
+	float StrongArmorDefense = 4;
 
 	int OlympianArmorCost = 20;
-	float OlympianArmorDefense = 8;
+	float OlympianArmorDefense = 5;
 
 	//Weapons
 
