@@ -819,18 +819,23 @@ int main(){
 					}
 
 						if (EnemyName == hgu){
-							cout << "Upon defeating Hades, " << PlayerName << endl;
-							cout << " found a flask filled with the nectar" << endl;
-							cout << " of the gods! " << PlayerName << " drank of" << endl;
-							cout << " the nectar and felt a great feeling of" << endl;
-							cout << " strength as the food of the immortal gods " << endl;
-							cout << " brought the hero one step closer to" << endl;
-							cout << " immortality." << endl;
-							cout << endl;
-							PlayerMaxHealth = 150;
-							PlayerHealth = PlayerMaxHealth;
-							cout << "Your health is now 150!" << endl;
-							cout << endl;
+							if (HasHealthBoost == false){
+								cout << "Upon defeating Hades, " << PlayerName << endl;
+								cout << " found a flask filled with the nectar" << endl;
+								cout << " of the gods! " << PlayerName << " drank of" << endl;
+								cout << " the nectar and felt a great feeling of" << endl;
+								cout << " strength as the food of the immortal gods " << endl;
+								cout << " brought the hero one step closer to" << endl;
+								cout << " immortality." << endl;
+								cout << endl;
+								PlayerMaxHealth += 50;
+								PlayerHealth = PlayerMaxHealth;
+								cout << "Your health is now " << PlayerMaxHealth << "!" << endl;
+								cout << endl;
+							}
+							if (HasHealthBoost == true){
+								cout << endl;
+							}
 					}
 						if (EnemyName == hgs){
 							cout << "With Hecate now defeated, " << PlayerName << endl;
