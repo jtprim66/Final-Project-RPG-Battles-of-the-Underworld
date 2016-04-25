@@ -12,12 +12,14 @@ int main(){
 	float PlayerAttack = 0;
 	float PlayerDefense = 0;
 	float PlayerDefensePercent = 0;
-	int PlayerPotion = 0;
+	float PlayerPotion = 0;
+	int PotionLimit = 0;
 	string PlayerClass;
 	string PlayerName;
 	int PlayerGold = 0;
 	int TorchPower = 0;
 	int MaxTorchPower = 0;
+	bool HasHealthBoost = false;
 
 	string A("Archer");
 	string B("Berserker");
@@ -697,6 +699,9 @@ int main(){
 					cout << endl;
 				}
 
+				PotionLimit = PlayerMaxHealth;
+				PotionLimit -= 25;
+
 				PlayerDefensePercent = PlayerDefense;
 				PlayerDefensePercent /= 10;
 				EnemyAttackPercent = EnemyAttack;
@@ -731,7 +736,7 @@ int main(){
 
 					case 2:
 						if (PlayerPotion > 0){
-							if (PlayerHealth > 75){
+							if (PlayerHealth > PotionLimit){
 								PlayerHealth = PlayerMaxHealth;
 								cout << PlayerName << " used a potion!" << endl;
 								PlayerPotion -= 1;
@@ -746,6 +751,12 @@ int main(){
 								break;
 							}
 						}
+						if (PlayerPotion <= 0){
+							cout << "You have no potions remaining!" << endl;
+							cout << endl;
+							continue;
+						}
+						
 
 					case 3:
 						cout << PlayerName << " has fled!" << endl;
