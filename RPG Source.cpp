@@ -292,6 +292,7 @@ int main(){
 				case 2:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getBasicArmorCost()){
+							PlayerGold -= shop.getBasicArmorCost();
 							PlayerDefense = pchar.getArcherDefense();
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
@@ -303,6 +304,7 @@ int main(){
 					}
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getBasicArmorCost()){
+							PlayerGold -= shop.getBasicArmorCost();
 							PlayerDefense = pchar.getBerserkerDefense();
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
@@ -314,6 +316,7 @@ int main(){
 					}
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getBasicArmorCost()){
+							PlayerGold -= shop.getBasicArmorCost();
 							PlayerDefense = pchar.getSpartanDefense();
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
@@ -329,6 +332,7 @@ int main(){
 				case 3:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getSturdyArmorCost()){
+							PlayerGold -= shop.getSturdyArmorCost();
 							PlayerDefense = pchar.getArcherDefense();
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
@@ -340,6 +344,7 @@ int main(){
 					}
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getSturdyArmorCost()){
+							PlayerGold -= shop.getSturdyArmorCost();
 							PlayerDefense = pchar.getBerserkerDefense();
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
@@ -351,6 +356,7 @@ int main(){
 					}
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getSturdyArmorCost()){
+							PlayerGold -= shop.getSturdyArmorCost();
 							PlayerDefense = pchar.getSpartanDefense();
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
@@ -366,6 +372,7 @@ int main(){
 				case 4:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getStrongArmorCost()){
+							PlayerGold -= shop.getStrongArmorCost();
 							PlayerDefense = pchar.getArcherDefense();
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
@@ -377,6 +384,7 @@ int main(){
 					}
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getStrongArmorCost()){
+							PlayerGold -= shop.getStrongArmorCost();
 							PlayerDefense = pchar.getBerserkerDefense();
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
@@ -388,6 +396,7 @@ int main(){
 					}
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getStrongArmorCost()){
+							PlayerGold -= shop.getStrongArmorCost();
 							PlayerDefense = pchar.getSpartanDefense();
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
@@ -403,6 +412,7 @@ int main(){
 				case 5:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getOlympianArmorCost()){
+							PlayerGold -= shop.getOlympianArmorCost();
 							PlayerDefense = pchar.getArcherDefense();
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
@@ -414,6 +424,7 @@ int main(){
 					}
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getOlympianArmorCost()){
+							PlayerGold -= shop.getOlympianArmorCost();
 							PlayerDefense = pchar.getBerserkerDefense();
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
@@ -425,6 +436,7 @@ int main(){
 					}
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getOlympianArmorCost()){
+							PlayerGold -= shop.getOlympianArmorCost();
 							PlayerDefense = pchar.getSpartanDefense();
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
@@ -440,6 +452,7 @@ int main(){
 				case 6:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getLongbowCost()){
+							PlayerGold -= shop.getLongbowCost();
 							PlayerAttack = shop.getLongbowAttack();
 							cout << "You purchased a longbow!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -451,6 +464,7 @@ int main(){
 
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getThickClubCost()){
+							PlayerGold -= shop.getThickClubCost();
 							PlayerAttack = shop.getThickClubAttack();
 							cout << "You purchased a thick club!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -462,6 +476,7 @@ int main(){
 
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getBronzeDaggerCost()){
+							PlayerGold -= shop.getBronzeDaggerCost();
 							PlayerAttack = shop.getBronzeDaggerAttack();
 							cout << "You purchased a bronze dagger!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -477,6 +492,7 @@ int main(){
 				case 7:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getEnchantedBowCost()){
+							PlayerGold -= shop.getEnchantedBowCost();
 							PlayerAttack = shop.getEnchantedBowAttack();
 							cout << "You purchased an enchanted bow!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -489,6 +505,7 @@ int main(){
 
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getEnchantedMaceCost()){
+							PlayerGold -= shop.getEnchantedMaceCost();
 							PlayerAttack = shop.getEnchantedMaceAttack();
 							cout << "You purchased an enchanted mace!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -500,6 +517,7 @@ int main(){
 
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getEnchantedGladiusCost()){
+							PlayerGold -= shop.getEnchantedGladiusCost();
 							PlayerAttack = shop.getEnchantedGladiusAttack();
 							cout << "You purchased an enchanted gladius!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -515,6 +533,7 @@ int main(){
 				case 8:
 					if (PlayerClass == A){
 						if (PlayerGold >= shop.getBowOfApolloCost()){
+							PlayerGold -= shop.getBowOfApolloCost();
 							PlayerAttack = shop.getBowOfApolloAttack();
 							cout << "You purchased the bow of Apollo!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -526,6 +545,7 @@ int main(){
 
 					if (PlayerClass == B){
 						if (PlayerGold >= shop.getHammerOfHephaestusCost()){
+							PlayerGold -= shop.getHammerOfHephaestusCost();
 							PlayerAttack = shop.getHammerOfHephaestusAttack();
 							cout << "You purchased the hammer of Hephaestus!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
@@ -538,6 +558,7 @@ int main(){
 
 					if (PlayerClass == S){
 						if (PlayerGold >= shop.getSwordOfAresCost()){
+							PlayerGold -= shop.getSwordOfAresCost();
 							PlayerAttack = shop.getSwordOfAresAttack();
 							cout << "You purchased the sword of Ares!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
