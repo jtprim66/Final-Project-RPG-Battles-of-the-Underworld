@@ -13,7 +13,7 @@ int main(){
 	float PlayerDefense = 0;
 	float PlayerDefensePercent = 0;
 	float PlayerPotion = 0;
-	int PotionLimit = 0;
+	float PotionLimit = 0;
 	string PlayerClass;
 	string PlayerName;
 	int PlayerGold = 0;
@@ -863,6 +863,7 @@ int main(){
 								PlayerMaxHealth += 50;
 								PlayerHealth = PlayerMaxHealth;
 								cout << "Your health is now " << PlayerMaxHealth << "!" << endl;
+								HasHealthBoost = true;
 								cout << endl;
 							}
 							if (HasHealthBoost == true){
