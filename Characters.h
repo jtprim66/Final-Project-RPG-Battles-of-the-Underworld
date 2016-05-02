@@ -66,22 +66,22 @@ private:
 	int cGold = 10;
 
 	// Hecate Goddess of Sorcery
-	float hgsHealth = 140;
+	float hgsHealth = 175;
 	float hgsAttack = 35;
 	int hgsGold = 15;
 
 	// Thanatos God of Death
-	float tgdHealth = 150;
+	float tgdHealth = 200;
 	float tgdAttack = 45;
 	int tgdGold = 20;
 
 	// Hades God of the Underworld
-	float hguHealth = 200;
+	float hguHealth = 250;
 	int hguAttack = 50;
 	int hguGold = 25;
 
 	// Tartarus Spirit of the Bottomless Pit
-	float tsbpHealth = 400;
+	float tsbpHealth = 500;
 	float tsbpAttack = 80;
 	int tsbpGold = 50;
 
