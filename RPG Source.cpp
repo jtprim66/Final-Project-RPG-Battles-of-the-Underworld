@@ -115,7 +115,7 @@ int main(){
 
 	cout << "As " << PlayerName << " entered the Underworld to begin his quest and defeat Tartarus," << endl;
 	cout << "the spirit of the bottomless pit, he stumbled upon a wandering soul." << endl;
-	cout << "Without warning, the soul attacked! " << PlayerName << " knew that stealth was not " << endl; 
+	cout << "Without warning, the soul attacked! " << PlayerName << " knew that stealth was not " << endl;
 	cout << "an option now and decided to fight." << endl;
 	cout << endl;
 
@@ -216,7 +216,7 @@ int main(){
 		cout << endl;
 	}
 
-	
+
 
 	do{
 		cout << "Welcome to the menu! Please make a selection (1-4)" << endl;
@@ -608,330 +608,330 @@ int main(){
 			} while (ShopMenu != 9);
 			break;
 
+		case 3:
+			cout << "Select an enemy to battle:" << endl;
+			cout << endl;
+
+			cout << "1. " << ws << endl;
+			cout << "   Health: " << nmy.getwsHealth() << endl;
+			cout << "   Attack: " << nmy.getwsAttack() << endl;
+			cout << endl;
+
+			cout << "2. " << vs << endl;
+			cout << "   Health: " << nmy.getvsHealth() << endl;
+			cout << "   Attack: " << nmy.getvsAttack() << endl;
+			cout << endl;
+
+			cout << "3. " << h << endl;
+			cout << "   Health: " << nmy.gethHealth() << endl;
+			cout << "   Attack: " << nmy.gethAttack() << endl;
+			cout << endl;
+
+			cout << "4. " << efe << endl;
+			cout << "   Health: " << nmy.getefeHealth() << endl;
+			cout << "   Attack: " << nmy.getefeAttack() << endl;
+			cout << endl;
+
+			cout << "5. " << e << endl;
+			cout << "   Health: " << nmy.geteHealth() << endl;
+			cout << "   Attack: " << nmy.geteAttack() << endl;
+			cout << endl;
+
+			cout << "6. " << c << endl;
+			cout << "   Health: " << nmy.getcHealth() << endl;
+			cout << "   Attack: " << nmy.getcAttack() << endl;
+			cout << endl;
+
+			cout << "7. " << hgs << endl;
+			cout << "   Health: " << nmy.gethgsHealth() << endl;
+			cout << "   Attack: " << nmy.gethgsAttack() << endl;
+			cout << endl;
+
+			cout << "8. " << tgd << endl;
+			cout << "   Health: " << nmy.gettgdHealth() << endl;
+			cout << "   Attack: " << nmy.gettgdAttack() << endl;
+			cout << endl;
+
+			cout << "9. " << hgu << endl;
+			cout << "   Health: " << nmy.gethguHealth() << endl;
+			cout << "   Attack: " << nmy.gethguAttack() << endl;
+			cout << endl;
+
+			cout << "10. " << tsbp << endl;
+			cout << "   Health: " << nmy.gettsbpHealth() << endl;
+			cout << "   Attack: " << nmy.gettsbpAttack() << endl;
+			cout << endl;
+
+			cout << endl;
+			cout << "Enter the number of your selection:" << endl;
+
+			cin >> EnemySelection;
+
+			switch (EnemySelection){
+
+			case 1:
+				EnemyHealth = nmy.getwsHealth();
+				EnemyAttack = nmy.getwsAttack();
+				EnemyGold = nmy.getwsGold();
+				EnemyName = ws;
+				break;
+
+			case 2:
+				EnemyHealth = nmy.getvsHealth();
+				EnemyAttack = nmy.getvsAttack();
+				EnemyGold = nmy.getvsGold();
+				EnemyName = vs;
+				break;
+
 			case 3:
-				cout << "Select an enemy to battle:" << endl;
+				EnemyHealth = nmy.gethHealth();
+				EnemyAttack = nmy.gethAttack();
+				EnemyGold = nmy.gethGold();
+				EnemyName = h;
+				break;
+
+			case 4:
+				EnemyHealth = nmy.getefeHealth();
+				EnemyAttack = nmy.getefeAttack();
+				EnemyGold = nmy.getefeGold();
+				EnemyName = efe;
+				break;
+
+			case 5:
+				EnemyHealth = nmy.geteHealth();
+				EnemyAttack = nmy.geteAttack();
+				EnemyGold = nmy.geteGold();
+				EnemyName = e;
+				break;
+
+			case 6:
+				EnemyHealth = nmy.getcHealth();
+				EnemyAttack = nmy.getcAttack();
+				EnemyGold = nmy.getcGold();
+				EnemyName = c;
+				break;
+
+			case 7:
+				EnemyHealth = nmy.gethgsHealth();
+				EnemyAttack = nmy.gethgsAttack();
+				EnemyGold = nmy.gethgsGold();
+				EnemyName = hgs;
+				break;
+
+			case 8:
+				EnemyHealth = nmy.gettgdHealth();
+				EnemyAttack = nmy.gettgdAttack();
+				EnemyGold = nmy.gettgdGold();
+				EnemyName = tgd;
+				break;
+
+			case 9:
+				EnemyHealth = nmy.gethguHealth();
+				EnemyAttack = nmy.gethguAttack();
+				EnemyGold = nmy.gethguGold();
+				EnemyName = hgu;
+				break;
+
+			case 10:
+				EnemyHealth = nmy.gettsbpHealth();
+				EnemyAttack = nmy.gettsbpAttack();
+				EnemyGold = nmy.gettsbpGold();
+				EnemyName = tsbp;
+				break;
+
+			default:
+				cout << "That is not a valid option" << endl;
+				cout << endl;
+			}
+
+			PotionLimit = PlayerMaxHealth;
+			PotionLimit -= 25;
+
+			PlayerDefensePercent = PlayerDefense;
+			PlayerDefensePercent /= 10;
+			EnemyAttackPercent = EnemyAttack;
+			EnemyAttackPercent *= PlayerDefensePercent;
+			EnemyAttack -= EnemyAttackPercent;
+			cout << endl;
+
+			do{
+				cout << EnemyName << ": " << EnemyHealth << " health" << endl;
+				cout << PlayerName << ": " << PlayerHealth << " health" << endl;
 				cout << endl;
 
-				cout << "1. " << ws << endl;
-				cout << "   Health: " << nmy.getwsHealth() << endl;
-				cout << "   Attack: " << nmy.getwsAttack() << endl;
+				cout << "1. Attack" << endl;
+				cout << "2. Use potion (" << PlayerPotion << " potions in inventory)" << endl;
+				cout << "3. Retreat (This wil count as a loss but no money will be lost)" << endl;
+				if (MaxTorchPower > 0){
+					cout << "4. Use Hecate's torch" << endl;
+				}
 				cout << endl;
+				cout << "Enter the number of your option: " << endl;
 
-				cout << "2. " << vs << endl;
-				cout << "   Health: " << nmy.getvsHealth() << endl;
-				cout << "   Attack: " << nmy.getvsAttack() << endl;
+				cin >> BattleMenu;
 				cout << endl;
-
-				cout << "3. " << h << endl;
-				cout << "   Health: " << nmy.gethHealth() << endl;
-				cout << "   Attack: " << nmy.gethAttack() << endl;
-				cout << endl;
-
-				cout << "4. " << efe << endl;
-				cout << "   Health: " << nmy.getefeHealth() << endl;
-				cout << "   Attack: " << nmy.getefeAttack() << endl;
-				cout << endl;
-
-				cout << "5. " << e << endl;
-				cout << "   Health: " << nmy.geteHealth() << endl;
-				cout << "   Attack: " << nmy.geteAttack() << endl;
-				cout << endl;
-
-				cout << "6. " << c << endl;
-				cout << "   Health: " << nmy.getcHealth() << endl;
-				cout << "   Attack: " << nmy.getcAttack() << endl;
-				cout << endl;
-
-				cout << "7. " << hgs << endl;
-				cout << "   Health: " << nmy.gethgsHealth() << endl;
-				cout << "   Attack: " << nmy.gethgsAttack() << endl;
-				cout << endl;
-
-				cout << "8. " << tgd << endl;
-				cout << "   Health: " << nmy.gettgdHealth() << endl;
-				cout << "   Attack: " << nmy.gettgdAttack() << endl;
-				cout << endl;
-
-				cout << "9. " << hgu << endl;
-				cout << "   Health: " << nmy.gethguHealth() << endl;
-				cout << "   Attack: " << nmy.gethguAttack() << endl;
-				cout << endl;
-
-				cout << "10. " << tsbp << endl;
-				cout << "   Health: " << nmy.gettsbpHealth() << endl;
-				cout << "   Attack: " << nmy.gettsbpAttack() << endl;
-				cout << endl;
-
-				cout << endl;
-				cout << "Enter the number of your selection:" << endl;
-
-				cin >> EnemySelection;
-
-				switch (EnemySelection){
+				switch (BattleMenu){
 
 				case 1:
-					EnemyHealth = nmy.getwsHealth();
-					EnemyAttack = nmy.getwsAttack();
-					EnemyGold = nmy.getwsGold();
-					EnemyName = ws;
+					EnemyHealth -= PlayerAttack;
+					cout << PlayerName << " attacked!" << endl;
+					cout << EnemyName << "'s health is now " << EnemyHealth << endl;
+					cout << endl;
 					break;
 
 				case 2:
-					EnemyHealth = nmy.getvsHealth();
-					EnemyAttack = nmy.getvsAttack();
-					EnemyGold = nmy.getvsGold();
-					EnemyName = vs;
-					break;
-
-				case 3:
-					EnemyHealth = nmy.gethHealth();
-					EnemyAttack = nmy.gethAttack();
-					EnemyGold = nmy.gethGold();
-					EnemyName = h;
-					break;
-
-				case 4:
-					EnemyHealth = nmy.getefeHealth();
-					EnemyAttack = nmy.getefeAttack();
-					EnemyGold = nmy.getefeGold();
-					EnemyName = efe;
-					break;
-
-				case 5:
-					EnemyHealth = nmy.geteHealth();
-					EnemyAttack = nmy.geteAttack();
-					EnemyGold = nmy.geteGold();
-					EnemyName = e;
-					break;
-
-				case 6:
-					EnemyHealth = nmy.getcHealth();
-					EnemyAttack = nmy.getcAttack();
-					EnemyGold = nmy.getcGold();
-					EnemyName = c;
-					break;
-
-				case 7:
-					EnemyHealth = nmy.gethgsHealth();
-					EnemyAttack = nmy.gethgsAttack();
-					EnemyGold = nmy.gethgsGold();
-					EnemyName = hgs;
-					break;
-
-				case 8:
-					EnemyHealth = nmy.gettgdHealth();
-					EnemyAttack = nmy.gettgdAttack();
-					EnemyGold = nmy.gettgdGold();
-					EnemyName = tgd;
-					break;
-
-				case 9:
-					EnemyHealth = nmy.gethguHealth();
-					EnemyAttack = nmy.gethguAttack();
-					EnemyGold = nmy.gethguGold();
-					EnemyName = hgu;
-					break;
-
-				case 10:
-					EnemyHealth = nmy.gettsbpHealth();
-					EnemyAttack = nmy.gettsbpAttack();
-					EnemyGold = nmy.gettsbpGold();
-					EnemyName = tsbp;
-					break;
-
-				default:
-					cout << "That is not a valid option" << endl;
-					cout << endl;
-				}
-
-				PotionLimit = PlayerMaxHealth;
-				PotionLimit -= 25;
-
-				PlayerDefensePercent = PlayerDefense;
-				PlayerDefensePercent /= 10;
-				EnemyAttackPercent = EnemyAttack;
-				EnemyAttackPercent *= PlayerDefensePercent;
-				EnemyAttack -= EnemyAttackPercent;
-				cout << endl;
-
-				do{
-					cout << EnemyName << ": " << EnemyHealth << " health" << endl;
-					cout << PlayerName << ": " << PlayerHealth << " health" << endl;
-					cout << endl;
-
-					cout << "1. Attack" << endl;
-					cout << "2. Use potion (" << PlayerPotion << " potions in inventory)" << endl;
-					cout << "3. Retreat (This wil count as a loss but no money will be lost)" << endl;
-					if (MaxTorchPower > 0){
-						cout << "4. Use Hecate's torch" << endl;
-					}
-					cout << endl;
-					cout << "Enter the number of your option: " << endl;
-
-					cin >> BattleMenu;
-					cout << endl;
-					switch (BattleMenu){
-
-					case 1:
-						EnemyHealth -= PlayerAttack;
-						cout << PlayerName << " attacked!" << endl;
-						cout << EnemyName << "'s health is now " << EnemyHealth << endl;
-						cout << endl;
-						break;
-
-					case 2:
-						if (PlayerPotion > 0){
-							if (PlayerHealth > PotionLimit){
-								PlayerHealth = PlayerMaxHealth;
-								cout << PlayerName << " used a potion!" << endl;
-								PlayerPotion -= 1;
-								cout << endl;
-								break;
-							}
-							else{
-								PlayerHealth += 25;
-								cout << PlayerName << " used a potion!" << endl;
-								PlayerPotion -= 1;
-								cout << endl;
-								break;
-							}
-						}
-						if (PlayerPotion <= 0){
-							cout << "You have no potions remaining!" << endl;
+					if (PlayerPotion > 0){
+						if (PlayerHealth > PotionLimit){
+							PlayerHealth = PlayerMaxHealth;
+							cout << PlayerName << " used a potion!" << endl;
+							PlayerPotion -= 1;
 							cout << endl;
-							continue;
+							break;
 						}
-						
-
-					case 3:
-						cout << PlayerName << " has fled!" << endl;
-						cout << endl;
-						RoundLoss = 1;
-						Losses += 1;
-						break;
-
-					case 4:
-						if (MaxTorchPower > 0){
-							if (TorchPower > 0){
-								cout << PlayerName << " used Hecate's torch!" << endl;
-								EnemyHealth -= 25;
-								brn = true;
-								MaxTorchPower -= 1;
-								cout << endl;
-								break;
-							}
-							if (TorchPower < 1){
-								cout << "You are out of torch power." << endl;
-								cout << endl;
-								continue;
-							}
-							else{
-								cout << "That is not a valid option" << endl;
-								cout << endl;
-								continue;
-							}
+						else{
+							PlayerHealth += 25;
+							cout << PlayerName << " used a potion!" << endl;
+							PlayerPotion -= 1;
+							cout << endl;
+							break;
 						}
-
-					default:
-						cout << "That is not a valid option" << endl;
+					}
+					if (PlayerPotion <= 0){
+						cout << "You have no potions remaining!" << endl;
 						cout << endl;
 						continue;
 					}
 
-					if (brn == true){
-						EnemyHealth -= 5;
-						cout << EnemyName << " was hurt by their burn!" << endl;
-						cout << endl;
-					}
 
-					if (EnemyHealth > 0 && RoundLoss != 1){
-						PlayerHealth -= EnemyAttack;
-						cout << EnemyName << " attacked!" << endl;
-						cout << PlayerName << "'s health is now " << PlayerHealth << endl;
-						cout << endl;
-					}
-
-				} while (RoundLoss != 1 && PlayerHealth > 0 && EnemyHealth > 0);
-
-				if (PlayerHealth > 0 && RoundLoss != 1){
-					cout << "Victory! You have defeated " << EnemyName << "!" << endl;
-					cout << "Gold earned: " << EnemyGold << endl;
-					PlayerGold += EnemyGold;
+				case 3:
+					cout << PlayerName << " has fled!" << endl;
 					cout << endl;
-					if (EnemyName == tsbp){
-						cout << "Finally, after a long journey, " << PlayerName << endl;
-						cout << "did what was said to be impossible and " << endl;
-						cout << "defeated the ancient spirit of Tartarus. " << endl;
-						cout << "The quest now completed, " << PlayerName << endl;
-						cout << "returned to the overworld to be crowned " << endl;
-						cout << "as a new Greek god upon Mount Olympus." << endl;
-						cout << endl;
-
-						cout << "Congratulations " << PlayerName << "!" << endl;
-						cout << endl;
-
-						system("pause");
-						return 1;
-					}
-
-						if (EnemyName == hgu){
-							if (HasHealthBoost == false){
-								cout << "Upon defeating Hades, " << PlayerName << endl;
-								cout << " found a flask filled with the nectar" << endl;
-								cout << " of the gods! " << PlayerName << " drank of" << endl;
-								cout << " the nectar and felt a great feeling of" << endl;
-								cout << " strength as the food of the immortal gods " << endl;
-								cout << " brought the hero one step closer to" << endl;
-								cout << " immortality." << endl;
-								cout << endl;
-								PlayerMaxHealth += 50;
-								PlayerHealth = PlayerMaxHealth;
-								cout << "Your health is now " << PlayerMaxHealth << "!" << endl;
-								HasHealthBoost = true;
-								cout << endl;
-							}
-							if (HasHealthBoost == true){
-								cout << endl;
-							}
-					}
-						if (EnemyName == hgs){
-							cout << "With Hecate now defeated, " << PlayerName << endl;
-							cout << " took her magic torch, knowing its power." << endl;
-							cout << endl;
-							MaxTorchPower = 1;
-							TorchPower = MaxTorchPower;
-							cout << "You got Hecate's torch!" << endl;
-							cout << "You can use this once per battle." << endl;
-							cout << "The torch causes 25 damage and leaves " << endl;
-							cout << "A burn effect that causes 5 extra damage " << endl;
-							cout << "each following turn. To restore the torch " << endl;
-							cout << "power, just heal after the battle." << endl;
-							cout << endl;
-						}
-				}
-
-				if (PlayerHealth <= 0){
-					PlayerGold = LossGold;
-					LossGold /= DivideGold;
-					cout << "Deafeat! Your enemy has bested you. Return to the menu and heal." << endl;
-					cout << "Gold lost: " << LossGold;
-					PlayerGold -= LossGold;
-					cout << endl;
-				}
-
-				if (RoundLoss != 0){
-					cout << "Defeat! You were forced to retreat. Return to the menu and retry." << endl;
-					cout << endl;
-				}
-				break;
+					RoundLoss = 1;
+					Losses += 1;
+					break;
 
 				case 4:
-					cout << "Thank you for playing!" << endl;
-					break;
+					if (MaxTorchPower > 0){
+						if (TorchPower > 0){
+							cout << PlayerName << " used Hecate's torch!" << endl;
+							EnemyHealth -= 25;
+							brn = true;
+							TorchPower -= 1;
+							cout << endl;
+							break;
+						}
+						if (TorchPower < 1){
+							cout << "You are out of torch power." << endl;
+							cout << endl;
+							continue;
+						}
+						else{
+							cout << "That is not a valid option" << endl;
+							cout << endl;
+							continue;
+						}
+					}
 
 				default:
 					cout << "That is not a valid option" << endl;
 					cout << endl;
+					continue;
+				}
+
+				if (brn == true){
+					EnemyHealth -= 5;
+					cout << EnemyName << " was hurt by their burn!" << endl;
+					cout << endl;
+				}
+
+				if (EnemyHealth > 0 && RoundLoss != 1){
+					PlayerHealth -= EnemyAttack;
+					cout << EnemyName << " attacked!" << endl;
+					cout << PlayerName << "'s health is now " << PlayerHealth << endl;
+					cout << endl;
+				}
+
+			} while (RoundLoss != 1 && PlayerHealth > 0 && EnemyHealth > 0);
+
+			if (PlayerHealth > 0 && RoundLoss != 1){
+				cout << "Victory! You have defeated " << EnemyName << "!" << endl;
+				cout << "Gold earned: " << EnemyGold << endl;
+				PlayerGold += EnemyGold;
+				cout << endl;
+				if (EnemyName == tsbp){
+					cout << "Finally, after a long journey, " << PlayerName << endl;
+					cout << "did what was said to be impossible and " << endl;
+					cout << "defeated the ancient spirit of Tartarus. " << endl;
+					cout << "The quest now completed, " << PlayerName << endl;
+					cout << "returned to the overworld to be crowned " << endl;
+					cout << "as a new Greek god upon Mount Olympus." << endl;
+					cout << endl;
+
+					cout << "Congratulations " << PlayerName << "!" << endl;
+					cout << endl;
+
+					system("pause");
+					return 1;
+				}
+
+				if (EnemyName == hgu){
+					if (HasHealthBoost == false){
+						cout << "Upon defeating Hades, " << PlayerName << endl;
+						cout << " found a flask filled with the nectar" << endl;
+						cout << " of the gods! " << PlayerName << " drank of" << endl;
+						cout << " the nectar and felt a great feeling of" << endl;
+						cout << " strength as the food of the immortal gods " << endl;
+						cout << " brought the hero one step closer to" << endl;
+						cout << " immortality." << endl;
+						cout << endl;
+						PlayerMaxHealth += 50;
+						PlayerHealth = PlayerMaxHealth;
+						cout << "Your health is now " << PlayerMaxHealth << "!" << endl;
+						HasHealthBoost = true;
+						cout << endl;
+					}
+					if (HasHealthBoost == true){
+						cout << endl;
+					}
+				}
+				if (EnemyName == hgs){
+					cout << "With Hecate now defeated, " << PlayerName << endl;
+					cout << " took her magic torch, knowing its power." << endl;
+					cout << endl;
+					MaxTorchPower = 1;
+					TorchPower = MaxTorchPower;
+					cout << "You got Hecate's torch!" << endl;
+					cout << "You can use this once per battle." << endl;
+					cout << "The torch causes 25 damage and leaves " << endl;
+					cout << "A burn effect that causes 5 extra damage " << endl;
+					cout << "each following turn. To restore the torch " << endl;
+					cout << "power, just heal after the battle." << endl;
+					cout << endl;
+				}
+			}
+
+			if (PlayerHealth <= 0){
+				PlayerGold = LossGold;
+				LossGold /= DivideGold;
+				cout << "Deafeat! Your enemy has bested you. Return to the menu and heal." << endl;
+				cout << "Gold lost: " << LossGold;
+				PlayerGold -= LossGold;
+				cout << endl;
+			}
+
+			if (RoundLoss != 0){
+				cout << "Defeat! You were forced to retreat. Return to the menu and retry." << endl;
+				cout << endl;
+			}
+			break;
+
+		case 4:
+			cout << "Thank you for playing!" << endl;
+			break;
+
+		default:
+			cout << "That is not a valid option" << endl;
+			cout << endl;
 		}
 
 	} while (menu != 4);
