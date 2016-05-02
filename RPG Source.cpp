@@ -268,6 +268,8 @@ int main(){
 			cout << "9. Exit" << endl;
 			cout << endl;
 			cout << "Make your selection (1-9)" << endl;
+			cout << "You have $" << PlayerGold << endl;
+			cout << endl;
 
 
 			do{
@@ -281,6 +283,7 @@ int main(){
 						PlayerPotion += 1;
 						cout << "You purchased a potion!" << endl;
 						cout << "You can use this to heal during battle." << endl;
+						cout << "You have $" << PlayerGold << endl;
 					}
 					else{
 						cout << "You do not have enough gold for that." << endl;
@@ -297,6 +300,7 @@ int main(){
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -309,6 +313,7 @@ int main(){
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -321,6 +326,7 @@ int main(){
 							PlayerDefense += shop.getBasicArmorDefense();
 							cout << "You purchased basic armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -337,6 +343,7 @@ int main(){
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -349,6 +356,7 @@ int main(){
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -361,6 +369,7 @@ int main(){
 							PlayerDefense += shop.getSturdyArmorDefense();
 							cout << "You purchased sturdy armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -377,6 +386,7 @@ int main(){
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -389,6 +399,7 @@ int main(){
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -401,6 +412,7 @@ int main(){
 							PlayerDefense += shop.getStrongArmorDefense();
 							cout << "You purchased strong armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -417,6 +429,7 @@ int main(){
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -429,6 +442,7 @@ int main(){
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -441,6 +455,7 @@ int main(){
 							PlayerDefense += shop.getOlympianArmorDefense();
 							cout << "You purchased olympian armor!" << endl;
 							cout << "Your defense is now " << PlayerDefense << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -456,6 +471,7 @@ int main(){
 							PlayerAttack = shop.getLongbowAttack();
 							cout << "You purchased a longbow!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -468,6 +484,7 @@ int main(){
 							PlayerAttack = shop.getThickClubAttack();
 							cout << "You purchased a thick club!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -480,6 +497,7 @@ int main(){
 							PlayerAttack = shop.getBronzeDaggerAttack();
 							cout << "You purchased a bronze dagger!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -496,6 +514,7 @@ int main(){
 							PlayerAttack = shop.getEnchantedBowAttack();
 							cout << "You purchased an enchanted bow!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -509,6 +528,7 @@ int main(){
 							PlayerAttack = shop.getEnchantedMaceAttack();
 							cout << "You purchased an enchanted mace!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -521,6 +541,7 @@ int main(){
 							PlayerAttack = shop.getEnchantedGladiusAttack();
 							cout << "You purchased an enchanted gladius!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -537,6 +558,7 @@ int main(){
 							PlayerAttack = shop.getBowOfApolloAttack();
 							cout << "You purchased the bow of Apollo!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -549,6 +571,7 @@ int main(){
 							PlayerAttack = shop.getHammerOfHephaestusAttack();
 							cout << "You purchased the hammer of Hephaestus!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
@@ -562,6 +585,7 @@ int main(){
 							PlayerAttack = shop.getSwordOfAresAttack();
 							cout << "You purchased the sword of Ares!" << endl;
 							cout << "Your attack is now " << PlayerAttack << endl;
+							cout << "You have $" << PlayerGold << endl;
 						}
 						else{
 							cout << "You do not have enough gold for that." << endl;
