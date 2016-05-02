@@ -203,7 +203,7 @@ int main(){
 	}
 
 	if (PlayerHealth <= 0){
-		PlayerGold = LossGold;
+		LossGold = PlayerGold;
 		LossGold /= DivideGold;
 		cout << "Deafeat! Your enemy has bested you. Return to the menu and heal." << endl;
 		cout << "Gold lost: " << LossGold;
@@ -911,7 +911,7 @@ int main(){
 			}
 
 			if (PlayerHealth <= 0){
-				PlayerGold = LossGold;
+				LossGold = PlayerGold;
 				LossGold /= DivideGold;
 				cout << "Deafeat! Your enemy has bested you. Return to the menu and heal." << endl;
 				cout << "Gold lost: " << LossGold;
