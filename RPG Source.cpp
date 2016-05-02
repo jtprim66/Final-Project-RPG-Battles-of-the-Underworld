@@ -857,6 +857,7 @@ int main(){
 				cout << "Victory! You have defeated " << EnemyName << "!" << endl;
 				cout << "Gold earned: " << EnemyGold << endl;
 				PlayerGold += EnemyGold;
+				brn = false;
 				cout << endl;
 				if (EnemyName == tsbp){
 					cout << "Finally, after a long journey, " << PlayerName << endl;
@@ -916,6 +917,7 @@ int main(){
 				cout << "Deafeat! Your enemy has bested you. Return to the menu and heal." << endl;
 				cout << "Gold lost: " << LossGold;
 				PlayerGold -= LossGold;
+				brn = false;
 				cout << endl;
 			}
 
