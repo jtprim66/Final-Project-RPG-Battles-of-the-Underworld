@@ -923,6 +923,7 @@ int main(){
 
 			if (RoundLoss != 0){
 				cout << "Defeat! You were forced to retreat. Return to the menu and retry." << endl;
+				brn = false;
 				cout << endl;
 			}
 			break;
