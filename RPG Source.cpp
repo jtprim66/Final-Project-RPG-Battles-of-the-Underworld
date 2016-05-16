@@ -52,6 +52,7 @@ int main(){
 	int menu = 0;
 	int ShopMenu = 0;
 	int EnemySelection = 0;
+	int endOption = 0;
 
 	PlayableCharacters pchar;
 	Enemies nmy;
@@ -869,10 +870,26 @@ int main(){
 					cout << endl;
 
 					cout << "Congratulations " << PlayerName << "!" << endl;
+					cout << "Would you like to continue?" << endl;
 					cout << endl;
 
-					system("pause");
-					return 1;
+					cout << "1. Continue playing" << endl;
+					cout << "2. Quit game" << endl;
+					cout << endl;
+
+					cin >> endOption;
+
+					switch (endOption){
+
+					case 1:
+						break;
+					case 2:
+						cout << "Thank you for playing!" << endl;
+						system("pause");
+						return 1;
+
+					}
+
 				}
 
 				if (EnemyName == hgu){
